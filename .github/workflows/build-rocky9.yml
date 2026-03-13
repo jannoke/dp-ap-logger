@@ -22,6 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           dnf install -y gcc-c++ make mariadb-connector-c-devel
+          dnf install -y mysql++ mysql++-devel
 
       - name: Build
         run: make
