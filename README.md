@@ -6,11 +6,14 @@ MySQL/Apache access log logger for datapanel. Reads Apache access logs and store
 
 - `gcc-c++` (g++ compiler)
 - `make`
-- `mysql-devel` (MySQL client library, provides `-lmysqlclient`)
+- `pkgconf-pkg-config` (`pkg-config` metadata lookup used by the Makefile)
+- `mysql++-devel` (MySQL++ headers and `libmysqlpp`)
+- `mariadb-connector-c-devel` (client library used by MySQL++)
 
 On Rocky Linux 9 / RHEL 9:
 ```bash
-dnf install -y gcc-c++ make mysql-devel
+dnf install -y epel-release
+dnf install -y gcc-c++ make pkgconf-pkg-config mariadb-connector-c-devel mysql++-devel
 ```
 
 ## Build
@@ -19,7 +22,7 @@ dnf install -y gcc-c++ make mysql-devel
 make
 ```
 
-The compiled binary `dp-ap-logger` will be created in the repository root.
+The compiled binary will be created at `build/dp-ap-logger`.
 
 To clean build artifacts:
 ```bash

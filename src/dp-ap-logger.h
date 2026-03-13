@@ -2,7 +2,7 @@
 #define DPAPLOGGER_H_
 
 #include <iostream>
-#include <mysql++.h>
+#include <mysql++/mysql++.h>
 #include <signal.h>
 #include <map>
 #include <time.h>
