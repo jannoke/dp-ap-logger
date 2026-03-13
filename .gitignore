@@ -1,0 +1,12 @@
+# Build outputs
+*.o
+*.obj
+dp-ap-logger
+release/
+Release/
+Debug/
+
+# IDE
+.vscode/
+.idea/
+*.swp
