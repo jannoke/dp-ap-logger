@@ -2,6 +2,7 @@
 *.o
 *.obj
 dp-ap-logger
+build/
 release/
 Release/
 Debug/
