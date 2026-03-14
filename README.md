@@ -10,7 +10,7 @@ MySQL/Apache access log logger for datapanel. Reads Apache access logs and store
 - `mysql++-devel` (MySQL++ headers and `libmysqlpp`)
 - `mariadb-connector-c-devel` (client library used by MySQL++)
 
-On Rocky Linux 9 / RHEL 9:
+On Rocky Linux 9 / RHEL 9 (install EPEL first, then the build dependencies):
 ```bash
 dnf install -y epel-release
 dnf install -y gcc-c++ make pkgconf-pkg-config mariadb-connector-c-devel mysql++-devel

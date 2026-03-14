@@ -21,7 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          dnf install -y epel-release gcc-c++ make pkgconf-pkg-config mariadb-connector-c-devel mysql++-devel
+          dnf install -y epel-release
+          dnf install -y gcc-c++ make pkgconf-pkg-config mariadb-connector-c-devel mysql++-devel
 
       - name: Build
         run: make
